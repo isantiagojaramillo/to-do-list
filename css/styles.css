@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url("/img/notes.jpg");
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+    /* height: 1000px; */
+}
+
+
+
+header{
+    text-align: center;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 50px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 700px;
+    min-height: 500px;
+    background-color: #fff;
+    padding: 40px;
+    border: 5px solid #000;
+    border-radius: 20px;
+}
+
+input{
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 20px;
+    border: 4px solid #404040;
+    border-radius: 10px;
+}
+
+button{
+    width: 150px;
+    height: 60px;
+    margin: 20px;
+    padding: 10px;
+    color: #fff;
+    background-color: gray;
+    font-size: 22px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+#lista-de-tareas{
+    width: 80%;
+    margin-top: 20px;
+}
+
+.tarea{
+    width: 100%;
+    min-height: 70px;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #407ba6;
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tarea.completada{
+    text-decoration: line-through;
+    background-color: #000;
+    border: none;
+}
+
+.tarea p{
+    max-width: 350px;
+}
+
+i{
+    margin: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icono-completar{
+    color: rgb(0, 255, 0);
+}
+
+.icono-eliminar{
+    color: #fff;
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover{
+    background-color: rgba(255, 255, 255, 0.523);
+}
+
+
+footer{
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
